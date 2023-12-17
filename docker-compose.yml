@@ -4,7 +4,7 @@ services:
     ports:
       - "3000:4002"
     environment:
-      - MSSQL_HOST=localhost
+      - MSSQL_HOST=mssql
       - MSSQL_PORT=1433
       - MSSQL_USER=sa
       - MSSQL_PASSWORD=Nopass123
