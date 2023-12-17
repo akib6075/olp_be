@@ -8,7 +8,7 @@ Node.js (version 18 or higher)
 
 yarn (yarn Package Manager)
 
-MSSQL Server Setup
+**MSSQL Server Setup**
 
     1.Installation:
 
@@ -22,21 +22,19 @@ MSSQL Server Setup
 
         yarn install
 
-Configuration
+**Configuration**
 
     Setup mssql server:
         link: https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver16&tabs=ubuntu2004
         follow the instruction and set user sa password Nopass123 for the dev environment
 
-Running the Project
+**Running the Project**
 
     Start the NestJS application:
         yarn start
 
-Usage
+**Usage**
+This project serves as a boilerplate for building NestJS applications that interact with a MSSQL database. Customize the routes, controllers, and services according to your application's requirements.
 
-    This project serves as a boilerplate for building NestJS applications that interact with a MSSQL database. Customize the routes, controllers, and services according to your application's requirements.
-
-Contributing
-
-    Feel free to contribute to this project by opening issues or creating pull requests. Your feedback and contributions are highly appreciated.
+**Contributing**
+Feel free to contribute to this project by opening issues or creating pull requests. Your feedback and contributions are highly appreciated.
