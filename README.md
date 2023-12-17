@@ -1,10 +1,12 @@
-Getting Started
+**Getting Started**
 Prerequisites
 
 Make sure you have the following software installed before running the project:
 
 Node.js (version 18 or higher)
+
 yarn (yarn Package Manager)
+
 MSSQL Server Setup
 
     1.Installation:
