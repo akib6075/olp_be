@@ -1,0 +1,29 @@
+services:
+  nodejs:
+    build: .
+    ports:
+      - "3000:4002"
+    environment:
+      - MSSQL_HOST=localhost
+      - MSSQL_PORT=1433
+      - MSSQL_USER=sa
+      - MSSQL_PASSWORD=Nopass123
+      - MSSQL_DATABASE=olpdev
+      - DATABASE_SCHEMA=dbo
+      - DATABASE_LOGGING=true
+      - DATABASE_SYNCRONIZE=true
+    depends_on:
+      - mssql
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Nopass123
+    ports:
+      - "1430:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql/data
+
+volumes:
+  mssql_data:
